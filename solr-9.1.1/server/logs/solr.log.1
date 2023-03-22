@@ -1,0 +1,22 @@
+2023-03-22 06:33:46.318 INFO  (main) [] o.e.j.u.log Logging initialized @929ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-03-22 06:33:46.325 WARN  (main) [] o.e.j.x.XmlConfiguration  => java.security.AccessControlException: access denied ("java.io.FilePermission" "/" "read")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:488)
+java.security.AccessControlException: access denied ("java.io.FilePermission" "/" "read")
+	at java.security.AccessControlContext.checkPermission(AccessControlContext.java:488) ~[?:?]
+	at java.security.AccessController.checkPermission(AccessController.java:1071) ~[?:?]
+	at java.lang.SecurityManager.checkPermission(SecurityManager.java:411) ~[?:?]
+	at java.lang.SecurityManager.checkRead(SecurityManager.java:742) ~[?:?]
+	at sun.nio.fs.UnixPath.checkRead(UnixPath.java:788) ~[?:?]
+	at sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:448) ~[?:?]
+	at sun.nio.fs.UnixPath.toRealPath(UnixPath.java:912) ~[?:?]
+	at org.eclipse.jetty.util.resource.PathResource.<init>(PathResource.java:234) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.resource.Resource.newResource(Resource.java:179) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.resource.Resource.newResource(Resource.java:152) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.xml.XmlConfiguration.lambda$main$3(XmlConfiguration.java:1871) ~[jetty-xml-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.security.AccessController.doPrivileged(AccessController.java:571) ~[?:?]
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1857) ~[jetty-xml-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:218) ~[start.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.start.Main.start(Main.java:491) ~[start.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.start.Main.main(Main.java:77) ~[start.jar:9.4.48.v20220622]

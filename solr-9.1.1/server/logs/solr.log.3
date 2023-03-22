@@ -1,0 +1,266 @@
+2023-03-22 06:52:42.967 INFO  (main) [] o.e.j.u.log Logging initialized @2210ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-03-22 06:52:43.439 INFO  (main) [] o.e.j.s.Server jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 15+36-1562
+2023-03-22 06:52:43.979 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-03-22 06:52:43.997 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.1.1
+2023-03-22 06:52:43.998 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2023-03-22 06:52:43.998 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /Users/bob/Documents/school/CZ4034/solr-9.1.1
+2023-03-22 06:52:43.998 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2023-03-22T06:52:43.998966Z
+2023-03-22 06:52:44.022 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr (source: system property: solr.solr.home)
+2023-03-22 06:52:44.026 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/solr.xml
+2023-03-22 06:52:44.175 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/Users/bob/Documents/school/CZ4034/solr-9.1.1/lib]
+2023-03-22 06:52:46.009 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2023-03-22 06:52:46.013 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2023-03-22 06:52:46.403 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr
+2023-03-22 06:52:46.539 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@69c79f09{/solr,file:///Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp}
+2023-03-22 06:52:46.557 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/logs/2023_03_22.request.log
+2023-03-22 06:52:46.570 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@2f6e28bc{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2023-03-22 06:52:46.570 INFO  (main) [] o.e.j.s.Server Started @5816ms
+2023-03-22 06:53:07.407 INFO  (qtp807328355-24) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2023-03-22 06:53:07.432 INFO  (qtp807328355-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1679467987138} status=0 QTime=70
+2023-03-22 06:53:07.457 INFO  (qtp807328355-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1679467987138} status=0 QTime=96
+2023-03-22 06:53:33.340 INFO  (qtp807328355-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1679467987138} status=0 QTime=1
+2023-03-22 06:53:33.339 INFO  (qtp807328355-39) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1679467987138} status=0 QTime=0
+2023-03-22 06:53:33.353 INFO  (qtp807328355-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1679467987138} status=0 QTime=14
+2023-03-22 06:56:35.845 INFO  (qtp807328355-39) [ x:reddit_core] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=reddit_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1679467987138
+2023-03-22 06:56:35.897 ERROR (qtp807328355-39) [] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'reddit_core': Unable to create core [reddit_core] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core' => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'reddit_core': Unable to create core [reddit_core] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1498)
+org.apache.solr.common.SolrException: Error CREATEing SolrCore 'reddit_core': Unable to create core [reddit_core] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1498) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:113) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:410) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:452) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:235) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:224) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:941) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:893) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:584) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:250) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:218) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.lang.Thread.run(Thread.java:832) ~[?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [reddit_core]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1613) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1456) ~[?:?]
+	... 48 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core reddit_core: Error loading solr config from /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:263) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1580) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1456) ~[?:?]
+	... 48 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:164) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1580) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1456) ~[?:?]
+	... 48 more
+Caused by: org.apache.solr.common.SolrException: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core'
+	at org.apache.solr.core.SolrConfig.readXml(SolrConfig.java:403) ~[?:?]
+	at org.apache.solr.core.SolrConfig.lambda$new$1(SolrConfig.java:224) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.getFromCache(IndexSchemaFactory.java:188) ~[?:?]
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:217) ~[?:?]
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:156) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1580) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1456) ~[?:?]
+	... 48 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:381) ~[?:?]
+	at org.apache.solr.core.SolrConfig$ResourceProvider.<init>(SolrConfig.java:176) ~[?:?]
+	at org.apache.solr.core.SolrConfig.readXml(SolrConfig.java:397) ~[?:?]
+	at org.apache.solr.core.SolrConfig.lambda$new$1(SolrConfig.java:224) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.getFromCache(IndexSchemaFactory.java:188) ~[?:?]
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:217) ~[?:?]
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:156) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1580) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1456) ~[?:?]
+	... 48 more
+2023-03-22 06:56:35.898 INFO  (qtp807328355-39) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=reddit_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1679467987138} status=400 QTime=90
+2023-03-22 06:56:55.155 INFO  (qtp807328355-18) [ x:reddit_core] o.a.s.h.a.CoreAdminOperation core create command schema=&dataDir=data&name=reddit_core&action=CREATE&config=&instanceDir=new_core&wt=json&_=1679467987138
+2023-03-22 06:56:55.168 ERROR (qtp807328355-18) [] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'reddit_core': Unable to create core [reddit_core] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core' => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'reddit_core': Unable to create core [reddit_core] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1498)
+org.apache.solr.common.SolrException: Error CREATEing SolrCore 'reddit_core': Unable to create core [reddit_core] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1498) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:113) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:410) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:452) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:235) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:224) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:941) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:893) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:584) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:250) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:218) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.lang.Thread.run(Thread.java:832) ~[?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [reddit_core]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1613) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1456) ~[?:?]
+	... 53 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core reddit_core: Error loading solr config from /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:263) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1580) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1456) ~[?:?]
+	... 53 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:164) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1580) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1456) ~[?:?]
+	... 53 more
+Caused by: org.apache.solr.common.SolrException: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core'
+	at org.apache.solr.core.SolrConfig.readXml(SolrConfig.java:403) ~[?:?]
+	at org.apache.solr.core.SolrConfig.lambda$new$1(SolrConfig.java:224) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.getFromCache(IndexSchemaFactory.java:188) ~[?:?]
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:217) ~[?:?]
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:156) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1580) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1456) ~[?:?]
+	... 53 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:381) ~[?:?]
+	at org.apache.solr.core.SolrConfig$ResourceProvider.<init>(SolrConfig.java:176) ~[?:?]
+	at org.apache.solr.core.SolrConfig.readXml(SolrConfig.java:397) ~[?:?]
+	at org.apache.solr.core.SolrConfig.lambda$new$1(SolrConfig.java:224) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.getFromCache(IndexSchemaFactory.java:188) ~[?:?]
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:217) ~[?:?]
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:156) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1580) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1456) ~[?:?]
+	... 53 more
+2023-03-22 06:56:55.169 INFO  (qtp807328355-18) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=&dataDir=data&name=reddit_core&action=CREATE&config=&instanceDir=new_core&wt=json&_=1679467987138} status=400 QTime=16
+2023-03-22 06:59:25.119 INFO  (qtp807328355-18) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1679467987138} status=0 QTime=3
+2023-03-22 06:59:25.303 INFO  (qtp807328355-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1679467987138} status=0 QTime=170
+2023-03-22 06:59:25.314 INFO  (qtp807328355-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1679468365103} status=0 QTime=181
+2023-03-22 06:59:25.685 INFO  (qtp807328355-43) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1679467987138} status=0 QTime=2
+2023-03-22 06:59:25.698 INFO  (qtp807328355-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1679468365679} status=0 QTime=4
+2023-03-22 06:59:25.709 INFO  (qtp807328355-18) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1679467987138} status=0 QTime=14
+2023-03-22 06:59:27.222 INFO  (qtp807328355-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1679467987138} status=0 QTime=1
+2023-03-22 06:59:27.223 INFO  (qtp807328355-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1679467987138} status=0 QTime=1
+2023-03-22 06:59:27.240 INFO  (qtp807328355-42) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1679467987138} status=0 QTime=20
+2023-03-22 06:59:27.916 INFO  (qtp807328355-18) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1679467987138} status=0 QTime=0
+2023-03-22 06:59:27.921 INFO  (qtp807328355-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1679467987138} status=0 QTime=5
+2023-03-22 06:59:27.953 INFO  (qtp807328355-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/cluster/security/authorization params={wt=json&_=1679468367903} status=0 QTime=5
+2023-03-22 06:59:29.026 INFO  (qtp807328355-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1679467987138} status=0 QTime=1
+2023-03-22 06:59:29.037 INFO  (qtp807328355-40) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1679467987138} status=0 QTime=13
+2023-03-22 06:59:29.039 INFO  (qtp807328355-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1679468369018&since=0} status=0 QTime=14
+2023-03-22 06:59:29.791 INFO  (qtp807328355-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1679467987138} status=0 QTime=2
+2023-03-22 06:59:29.827 INFO  (qtp807328355-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1679467987138} status=0 QTime=39
+2023-03-22 06:59:33.169 INFO  (qtp807328355-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1679467987138} status=0 QTime=1
+2023-03-22 06:59:33.171 INFO  (qtp807328355-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1679467987138} status=0 QTime=0
+2023-03-22 06:59:33.180 INFO  (qtp807328355-43) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1679467987138} status=0 QTime=11
+2023-03-22 07:04:54.603 INFO  (qtp807328355-23) [ x:new_core] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1679467987138
+2023-03-22 07:04:54.709 INFO  (qtp807328355-23) [ x:new_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.3.0
+2023-03-22 07:04:54.866 INFO  (qtp807328355-23) [ x:new_core] o.a.s.s.IndexSchema Schema name=default-config
+2023-03-22 07:04:55.512 INFO  (qtp807328355-23) [ x:new_core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-03-22 07:04:55.515 INFO  (qtp807328355-23) [ x:new_core] o.a.s.c.CoreContainer Creating SolrCore 'new_core' using configuration from instancedir /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core, trusted=true
+2023-03-22 07:04:55.574 INFO  (qtp807328355-23) [ x:new_core] o.a.s.c.SolrCore Opening new SolrCore at [/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core], dataDir=[/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/data/]
+2023-03-22 07:04:56.901 INFO  (qtp807328355-23) [ x:new_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-03-22 07:04:56.902 INFO  (qtp807328355-23) [ x:new_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-03-22 07:04:56.922 INFO  (qtp807328355-23) [ x:new_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-03-22 07:04:56.924 INFO  (qtp807328355-23) [ x:new_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-03-22 07:04:56.987 INFO  (qtp807328355-23) [ x:new_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/conf
+2023-03-22 07:04:57.020 INFO  (qtp807328355-23) [ x:new_core] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2023-03-22 07:04:57.066 INFO  (qtp807328355-23) [ x:new_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-03-22 07:04:57.073 INFO  (qtp807328355-23) [ x:new_core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1761050568502018048
+2023-03-22 07:04:57.078 INFO  (searcherExecutor-12-thread-1-processing-new_core) [ x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-03-22 07:04:57.078 INFO  (searcherExecutor-12-thread-1-processing-new_core) [ x:new_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-03-22 07:04:57.084 INFO  (qtp807328355-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1679467987138} status=0 QTime=2485
+2023-03-22 07:04:57.098 INFO  (searcherExecutor-12-thread-1-processing-new_core) [ x:new_core] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2023-03-22 07:04:57.142 INFO  (qtp807328355-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1679467987138} status=0 QTime=1
+2023-03-22 07:04:57.170 INFO  (qtp807328355-40) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1679467987138} status=0 QTime=18
+2023-03-22 07:04:57.178 INFO  (qtp807328355-18) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1679467987138} status=0 QTime=26
+2023-03-22 07:06:21.709 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@2f6e28bc{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2023-03-22 07:06:21.737 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=2098830440
+2023-03-22 07:06:21.744 INFO  (coreCloseExecutor-18-thread-1) [ x:new_core] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@a77134d new_core
+2023-03-22 07:06:21.745 INFO  (coreCloseExecutor-18-thread-1) [ x:new_core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.new_core tag=SolrCore@a77134d
+2023-03-22 07:06:21.799 INFO  (coreCloseExecutor-18-thread-1) [ x:new_core] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2023-03-22 07:06:21.808 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2023-03-22 07:06:21.830 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2023-03-22 07:06:21.842 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2023-03-22 07:06:21.866 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@69c79f09{/solr,null,STOPPED}{/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp}
