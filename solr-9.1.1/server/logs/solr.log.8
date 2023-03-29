@@ -1,0 +1,362 @@
+2023-03-29 06:25:31.777 INFO  (main) [] o.e.j.u.log Logging initialized @1864ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-03-29 06:25:32.136 INFO  (main) [] o.e.j.s.Server jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 15+36-1562
+2023-03-29 06:25:32.595 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-03-29 06:25:32.609 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.1.1
+2023-03-29 06:25:32.610 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2023-03-29 06:25:32.610 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /Users/bob/Documents/school/CZ4034/solr-9.1.1
+2023-03-29 06:25:32.610 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2023-03-29T06:25:32.610547Z
+2023-03-29 06:25:32.626 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr (source: system property: solr.solr.home)
+2023-03-29 06:25:32.629 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/solr.xml
+2023-03-29 06:25:32.748 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/Users/bob/Documents/school/CZ4034/solr-9.1.1/lib]
+2023-03-29 06:25:34.222 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2023-03-29 06:25:34.225 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2023-03-29 06:25:34.609 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr
+2023-03-29 06:25:34.611 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [new_core]
+2023-03-29 06:25:34.617 INFO  (coreLoadExecutor-10-thread-1) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2023-03-29 06:25:34.730 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.3.0
+2023-03-29 06:25:34.766 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1849db1a{/solr,file:///Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp}
+2023-03-29 06:25:34.789 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/logs/2023_03_29.request.log
+2023-03-29 06:25:34.874 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@1ae67cad{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2023-03-29 06:25:34.876 INFO  (main) [] o.e.j.s.Server Started @4966ms
+2023-03-29 06:25:34.930 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.s.IndexSchema Schema name=default-config
+2023-03-29 06:25:35.274 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-03-29 06:25:35.275 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.c.CoreContainer Creating SolrCore 'new_core' using configuration from instancedir /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core, trusted=true
+2023-03-29 06:25:35.325 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.c.SolrCore Opening new SolrCore at [/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core], dataDir=[/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/data/]
+2023-03-29 06:25:36.071 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-03-29 06:25:36.071 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-03-29 06:25:36.123 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-03-29 06:25:36.125 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-03-29 06:25:36.423 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/conf
+2023-03-29 06:25:36.457 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4}
+2023-03-29 06:25:36.490 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-03-29 06:25:36.514 INFO  (searcherExecutor-12-thread-1-processing-new_core) [ x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-03-29 06:25:36.514 INFO  (searcherExecutor-12-thread-1-processing-new_core) [ x:new_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-03-29 06:25:36.526 INFO  (searcherExecutor-12-thread-1-processing-new_core) [ x:new_core] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2023-03-29 06:25:43.448 INFO  (searcherExecutor-12-thread-1-processing-new_core) [ x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-03-29 06:25:43.482 INFO  (searcherExecutor-12-thread-1-processing-new_core) [ x:new_core] o.a.s.c.SolrCore Registered new searcher autowarm time: 10 ms
+2023-03-29 06:25:43.497 INFO  (qtp1455695758-24) [ x:new_core] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{deleteByQuery=*:* (-1761682279207272448), commit=} 0 234
+2023-03-29 06:26:01.790 INFO  (qtp1455695758-19) [ x:new_core] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/conf/managed-schema.xml
+2023-03-29 06:26:01.870 INFO  (qtp1455695758-19) [ x:new_core] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true&header=true&separator=,}{} 0 292
+2023-03-29 06:26:01.870 ERROR (qtp1455695758-19) [ x:new_core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Exception writing document id 357e77a1-e367-40de-817a-af2d208dc7fa to the index; possible analysis error: cannot change field "Total_Score" from doc values type=SORTED_NUMERIC to inconsistent doc values type=NUMERIC => org.apache.solr.common.SolrException: Exception writing document id 357e77a1-e367-40de-817a-af2d208dc7fa to the index; possible analysis error: cannot change field "Total_Score" from doc values type=SORTED_NUMERIC to inconsistent doc values type=NUMERIC
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:314)
+org.apache.solr.common.SolrException: Exception writing document id 357e77a1-e367-40de-817a-af2d208dc7fa to the index; possible analysis error: cannot change field "Total_Score" from doc values type=SORTED_NUMERIC to inconsistent doc values type=NUMERIC
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:314) ~[?:?]
+	at org.apache.solr.update.processor.RunUpdateProcessorFactory$RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:76) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.NestedUpdateProcessorFactory$NestedUpdateProcessor.processAdd(NestedUpdateProcessorFactory.java:78) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:269) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doVersionAdd(DistributedUpdateProcessor.java:544) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.lambda$versionAdd$0(DistributedUpdateProcessor.java:356) ~[?:?]
+	at org.apache.solr.update.VersionBucket.runWithLock(VersionBucket.java:51) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:353) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:235) ~[?:?]
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:535) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:71) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:82) ~[?:?]
+	at org.apache.solr.handler.loader.CSVLoaderBase.doAdd(CSVLoaderBase.java:441) ~[?:?]
+	at org.apache.solr.handler.loader.SingleThreadedCSVLoader.addDoc(CSVLoader.java:47) ~[?:?]
+	at org.apache.solr.handler.loader.CSVLoaderBase.load(CSVLoaderBase.java:410) ~[?:?]
+	at org.apache.solr.handler.loader.CSVLoader.load(CSVLoader.java:34) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:101) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:84) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:224) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2865) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:887) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:606) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:250) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:218) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.lang.Thread.run(Thread.java:832) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: cannot change field "Total_Score" from doc values type=SORTED_NUMERIC to inconsistent doc values type=NUMERIC
+	at org.apache.lucene.index.FieldInfo.verifySameDocValuesType(FieldInfo.java:279) ~[?:?]
+	at org.apache.lucene.index.FieldInfos$FieldNumbers.verifySameSchema(FieldInfos.java:467) ~[?:?]
+	at org.apache.lucene.index.FieldInfos$FieldNumbers.addOrGet(FieldInfos.java:394) ~[?:?]
+	at org.apache.lucene.index.FieldInfos$Builder.add(FieldInfos.java:706) ~[?:?]
+	at org.apache.lucene.index.FieldInfos$Builder.add(FieldInfos.java:664) ~[?:?]
+	at org.apache.lucene.index.IndexingChain.initializeFieldInfo(IndexingChain.java:669) ~[?:?]
+	at org.apache.lucene.index.IndexingChain.processDocument(IndexingChain.java:610) ~[?:?]
+	at org.apache.lucene.index.DocumentsWriterPerThread.updateDocuments(DocumentsWriterPerThread.java:241) ~[?:?]
+	at org.apache.lucene.index.DocumentsWriter.updateDocuments(DocumentsWriter.java:432) ~[?:?]
+	at org.apache.lucene.index.IndexWriter.updateDocuments(IndexWriter.java:1532) ~[?:?]
+	at org.apache.lucene.index.IndexWriter.updateDocuments(IndexWriter.java:1521) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:1048) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:416) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:369) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:300) ~[?:?]
+	... 81 more
+2023-03-29 06:29:29.527 INFO  (qtp1455695758-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680071369455} status=0 QTime=26
+2023-03-29 06:29:29.533 INFO  (qtp1455695758-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1680071369455} status=0 QTime=32
+2023-03-29 06:29:29.566 INFO  (qtp1455695758-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680071369455} status=0 QTime=64
+2023-03-29 06:29:31.289 INFO  (qtp1455695758-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680071369455} status=0 QTime=3
+2023-03-29 06:29:31.296 INFO  (qtp1455695758-44) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1680071371266} status=0 QTime=11
+2023-03-29 06:29:31.299 INFO  (qtp1455695758-24) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1680071369455&ts=1680071369455} status=503 QTime=12
+2023-03-29 06:29:31.312 INFO  (qtp1455695758-23) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1680071371266} status=0 QTime=27
+2023-03-29 06:29:31.314 INFO  (qtp1455695758-19) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1680071371266} status=0 QTime=30
+2023-03-29 06:29:31.316 INFO  (qtp1455695758-42) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680071369455} status=0 QTime=31
+2023-03-29 06:29:48.777 INFO  (qtp1455695758-26) [ x:new_core] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true&header=true&separator=,}{} 0 7
+2023-03-29 06:29:48.777 ERROR (qtp1455695758-26) [ x:new_core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Exception writing document id a400bd87-e16d-4cf1-9b14-a767a72b93ea to the index; possible analysis error: cannot change field "Total_Score" from doc values type=SORTED_NUMERIC to inconsistent doc values type=NUMERIC => org.apache.solr.common.SolrException: Exception writing document id a400bd87-e16d-4cf1-9b14-a767a72b93ea to the index; possible analysis error: cannot change field "Total_Score" from doc values type=SORTED_NUMERIC to inconsistent doc values type=NUMERIC
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:314)
+org.apache.solr.common.SolrException: Exception writing document id a400bd87-e16d-4cf1-9b14-a767a72b93ea to the index; possible analysis error: cannot change field "Total_Score" from doc values type=SORTED_NUMERIC to inconsistent doc values type=NUMERIC
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:314) ~[?:?]
+	at org.apache.solr.update.processor.RunUpdateProcessorFactory$RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:76) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.NestedUpdateProcessorFactory$NestedUpdateProcessor.processAdd(NestedUpdateProcessorFactory.java:78) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:269) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doVersionAdd(DistributedUpdateProcessor.java:544) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.lambda$versionAdd$0(DistributedUpdateProcessor.java:356) ~[?:?]
+	at org.apache.solr.update.VersionBucket.runWithLock(VersionBucket.java:51) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:353) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:235) ~[?:?]
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:535) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:71) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:82) ~[?:?]
+	at org.apache.solr.handler.loader.CSVLoaderBase.doAdd(CSVLoaderBase.java:441) ~[?:?]
+	at org.apache.solr.handler.loader.SingleThreadedCSVLoader.addDoc(CSVLoader.java:47) ~[?:?]
+	at org.apache.solr.handler.loader.CSVLoaderBase.load(CSVLoaderBase.java:410) ~[?:?]
+	at org.apache.solr.handler.loader.CSVLoader.load(CSVLoader.java:34) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:101) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:84) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:224) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2865) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:887) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:606) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:250) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:218) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505) ~[jetty-servlet-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.lang.Thread.run(Thread.java:832) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: cannot change field "Total_Score" from doc values type=SORTED_NUMERIC to inconsistent doc values type=NUMERIC
+	at org.apache.lucene.index.FieldInfo.verifySameDocValuesType(FieldInfo.java:279) ~[?:?]
+	at org.apache.lucene.index.FieldInfos$FieldNumbers.verifySameSchema(FieldInfos.java:467) ~[?:?]
+	at org.apache.lucene.index.FieldInfos$FieldNumbers.addOrGet(FieldInfos.java:394) ~[?:?]
+	at org.apache.lucene.index.FieldInfos$Builder.add(FieldInfos.java:706) ~[?:?]
+	at org.apache.lucene.index.FieldInfos$Builder.add(FieldInfos.java:664) ~[?:?]
+	at org.apache.lucene.index.IndexingChain.initializeFieldInfo(IndexingChain.java:669) ~[?:?]
+	at org.apache.lucene.index.IndexingChain.processDocument(IndexingChain.java:610) ~[?:?]
+	at org.apache.lucene.index.DocumentsWriterPerThread.updateDocuments(DocumentsWriterPerThread.java:241) ~[?:?]
+	at org.apache.lucene.index.DocumentsWriter.updateDocuments(DocumentsWriter.java:432) ~[?:?]
+	at org.apache.lucene.index.IndexWriter.updateDocuments(IndexWriter.java:1532) ~[?:?]
+	at org.apache.lucene.index.IndexWriter.updateDocuments(IndexWriter.java:1521) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:1048) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:416) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:369) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:300) ~[?:?]
+	... 82 more
+2023-03-29 06:35:17.927 INFO  (qtp1455695758-49) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680071369455} status=0 QTime=6
+2023-03-29 06:35:17.939 INFO  (qtp1455695758-48) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1680071369455} status=0 QTime=20
+2023-03-29 06:35:17.964 INFO  (qtp1455695758-47) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680071369455} status=0 QTime=45
+2023-03-29 06:35:17.978 INFO  (qtp1455695758-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680071369455} status=0 QTime=1
+2023-03-29 06:35:17.979 INFO  (qtp1455695758-18) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1680071369455} status=0 QTime=2
+2023-03-29 06:35:20.236 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.new_core tag=null
+2023-03-29 06:35:20.303 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@3c744b94 new_core
+2023-03-29 06:35:20.304 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.new_core tag=SolrCore@3c744b94
+2023-03-29 06:35:20.307 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2023-03-29 06:35:20.372 INFO  (qtp1455695758-43) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=new_core&action=UNLOAD&wt=json&_=1680071369455} status=0 QTime=162
+2023-03-29 06:35:20.388 INFO  (qtp1455695758-44) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1680071369455} status=0 QTime=0
+2023-03-29 06:35:20.393 INFO  (qtp1455695758-18) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680071369455} status=0 QTime=4
+2023-03-29 06:35:20.398 INFO  (qtp1455695758-46) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680071369455} status=0 QTime=10
+2023-03-29 06:35:23.123 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1680071369455
+2023-03-29 06:35:23.222 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.3.0
+2023-03-29 06:35:23.247 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.s.IndexSchema Schema name=default-config
+2023-03-29 06:35:23.338 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-03-29 06:35:23.339 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.CoreContainer Creating SolrCore 'new_core' using configuration from instancedir /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core, trusted=true
+2023-03-29 06:35:23.341 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.SolrCore Opening new SolrCore at [/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core], dataDir=[/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/data/]
+2023-03-29 06:35:23.605 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-03-29 06:35:23.605 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-03-29 06:35:23.617 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-03-29 06:35:23.619 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-03-29 06:35:23.626 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/conf
+2023-03-29 06:35:23.627 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4}
+2023-03-29 06:35:23.631 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-03-29 06:35:23.635 INFO  (searcherExecutor-18-thread-1-processing-new_core) [ x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-03-29 06:35:23.635 INFO  (searcherExecutor-18-thread-1-processing-new_core) [ x:new_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-03-29 06:35:23.636 INFO  (qtp1455695758-43) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1680071369455} status=0 QTime=515
+2023-03-29 06:35:23.640 INFO  (searcherExecutor-18-thread-1-processing-new_core) [ x:new_core] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2023-03-29 06:35:23.650 INFO  (qtp1455695758-46) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680071369455} status=0 QTime=1
+2023-03-29 06:35:23.652 INFO  (qtp1455695758-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1680071369455} status=0 QTime=4
+2023-03-29 06:35:23.659 INFO  (qtp1455695758-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680071369455} status=0 QTime=11
+2023-03-29 06:35:38.562 INFO  (searcherExecutor-18-thread-1-processing-new_core) [ x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-03-29 06:35:38.592 INFO  (searcherExecutor-18-thread-1-processing-new_core) [ x:new_core] o.a.s.c.SolrCore Registered new searcher autowarm time: 1 ms
+2023-03-29 06:35:38.599 INFO  (qtp1455695758-24) [ x:new_core] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true&header=true&separator=,}{add=[0eabc07a-6887-436a-bd02-213eca55b948 (1761682898779373568), 4ce358fa-1613-4674-a90d-6797671f5485 (1761682898800345088), c193346f-58de-4009-aa23-3dd022e7fe43 (1761682898803490816), 92336167-690c-4a81-96d2-7500ee06fdb0 (1761682898805587968), b30fe932-30f7-419a-8f7e-ee9464354964 (1761682898808733696), 95c87985-f492-4ee4-98e6-a17d849d7793 (1761682898812928000), b346a74b-3793-4a67-9c76-ab99eb5c467e (1761682898817122304), d98f9306-44d4-491d-b609-bd2797b27767 (1761682898825510912), 9e33b994-5203-4a8b-bebb-9822ce853152 (1761682898830753792), d718719b-8670-4512-a955-ebeec3ba1733 (1761682898840190976), ... (14384 adds)], commit=} 0 4383
+2023-03-29 06:35:46.969 INFO  (qtp1455695758-46) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680071746896} status=0 QTime=13
+2023-03-29 06:35:46.981 INFO  (qtp1455695758-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1680071746896} status=0 QTime=11
+2023-03-29 06:35:46.995 INFO  (qtp1455695758-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680071746896} status=0 QTime=26
+2023-03-29 06:35:57.389 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1680071757370} status=0 QTime=1
+2023-03-29 06:35:57.397 INFO  (qtp1455695758-17) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680071746896} status=0 QTime=0
+2023-03-29 06:35:57.397 INFO  (qtp1455695758-44) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1680071746896&ts=1680071746896} status=503 QTime=0
+2023-03-29 06:35:57.407 INFO  (qtp1455695758-19) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1680071757370} status=0 QTime=11
+2023-03-29 06:35:57.434 INFO  (qtp1455695758-46) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1680071757370} status=0 QTime=49
+2023-03-29 06:35:57.435 INFO  (qtp1455695758-45) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680071746896} status=0 QTime=39
+2023-03-29 06:35:59.740 INFO  (qtp1455695758-48) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680071746896} status=0 QTime=6
+2023-03-29 06:35:59.741 INFO  (qtp1455695758-18) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680071746896} status=0 QTime=8
+2023-03-29 06:35:59.744 INFO  (qtp1455695758-24) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1680071759687} status=0 QTime=10
+2023-03-29 06:36:08.790 INFO  (qtp1455695758-46) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1680071759687} status=0 QTime=12
+2023-03-29 06:36:08.790 INFO  (qtp1455695758-17) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680071746896} status=0 QTime=13
+2023-03-29 06:36:08.804 INFO  (qtp1455695758-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680071746896} status=0 QTime=27
+2023-03-29 06:36:08.826 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1680071759687} hits=14384 status=0 QTime=49
+2023-03-29 06:46:11.608 INFO  (qtp1455695758-45) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+courses+best+OR+Comment_Body:ntu+courses+best)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=148
+2023-03-29 06:47:34.704 INFO  (qtp1455695758-44) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+best+course+OR+Comment_Body:ntu+best+course)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=29
+2023-03-29 06:47:44.274 INFO  (qtp1455695758-46) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+best+course+OR+Comment_Body:ntu+best+course)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=4
+2023-03-29 06:47:45.487 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+best+course+OR+Comment_Body:ntu+best+course)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=7
+2023-03-29 06:55:00.000 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+best+course+OR+Comment_Body:ntu+best+course)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=8
+2023-03-29 07:01:05.307 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:NTU+best+course+OR+Comment_Body:NTU+best+course)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=280 status=0 QTime=24
+2023-03-29 07:02:12.167 INFO  (qtp1455695758-46) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu++OR+Comment_Body:ntu+)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=6
+2023-03-29 07:02:34.447 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:american+OR+Comment_Body:american)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=4 status=0 QTime=6
+2023-03-29 07:08:46.968 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+es+OR+Comment_Body:ntu+es)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=27
+2023-03-29 07:10:12.346 INFO  (qtp1455695758-44) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+OR+Comment_Body:ntu)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=3
+2023-03-29 07:17:44.836 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:best+OR+Comment_Body:best)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=17
+2023-03-29 07:26:45.173 INFO  (qtp1455695758-23) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+OR+Comment_Body:ntu)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=31
+2023-03-29 07:27:28.139 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+OR+Comment_Body:ntu)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=7
+2023-03-29 07:31:25.935 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+best+OR+Comment_Body:ntu+best)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=20
+2023-03-29 07:35:44.620 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+best+OR+Comment_Body:ntu+best)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=3
+2023-03-29 07:37:54.732 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+best+course+OR+Comment_Body:ntu+best+course)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=4
+2023-03-29 07:38:04.638 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:ntu+best+prof+OR+Comment_Body:ntu+best+prof)+AND+(Subreddit:'sgexams'+OR+Subreddit:ntu)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=754 status=0 QTime=8
+2023-03-29 07:38:09.822 INFO  (qtp1455695758-23) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:anything+OR+Comment_Body:anything)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=130 status=0 QTime=10
+2023-03-29 07:38:46.826 INFO  (qtp1455695758-44) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:anything+OR+Comment_Body:anything)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=130 status=0 QTime=6
+2023-03-29 07:39:15.282 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:anything+OR+Comment_Body:anything)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=130 status=0 QTime=2
+2023-03-29 07:39:47.587 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:anything+OR+Comment_Body:anything)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=130 status=0 QTime=1
+2023-03-29 07:41:02.307 INFO  (qtp1455695758-23) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:anything+OR+Comment_Body:anything)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=130 status=0 QTime=2
+2023-03-29 07:46:12.387 INFO  (qtp1455695758-46) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:anythin+OR+Comment_Body:anythin)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=0 status=0 QTime=11
+2023-03-29 07:46:38.720 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:anythin+goes+OR+Comment_Body:anythin+goes)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=0 status=0 QTime=7
+2023-03-29 07:50:15.213 INFO  (qtp1455695758-44) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:anythig+goes+OR+Comment_Body:anythig+goes)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=0 status=0 QTime=7
+2023-03-29 07:50:27.316 INFO  (qtp1455695758-23) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:NTU+si+super+OR+Comment_Body:NTU+si+super)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=280 status=0 QTime=20
+2023-03-29 07:50:44.535 INFO  (qtp1455695758-49) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:NTU+is+supe+OR+Comment_Body:NTU+is+supe)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=280 status=0 QTime=9
+2023-03-29 07:50:46.783 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:NTU+is+supe+OR+Comment_Body:NTU+is+supe)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=280 status=0 QTime=1
+2023-03-29 07:51:12.731 INFO  (qtp1455695758-46) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:Best+courses+in+schol+OR+Comment_Body:Best+courses+in+schol)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=11
+2023-03-29 07:51:29.401 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:Best+courses+in+school+OR+Comment_Body:Best+courses+in+school)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=9
+2023-03-29 07:51:45.299 INFO  (qtp1455695758-49) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:i+am+having+trouble+with+slep+OR+Comment_Body:i+am+having+trouble+with+slep)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=2081 status=0 QTime=16
+2023-03-29 07:52:51.096 INFO  (qtp1455695758-23) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:anyhting+is+good+OR+Comment_Body:anyhting+is+good)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=0 status=0 QTime=28
+2023-03-29 07:53:00.319 INFO  (qtp1455695758-46) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:best+course+OR+Comment_Body:best+course)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=10
+2023-03-29 07:53:29.009 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:best+course+in+nus+OR+Comment_Body:best+course+in+nus)+AND+(Subreddit:'sgexams'+OR+Subreddit:nus)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=425 status=0 QTime=12
+2023-03-29 07:54:15.963 INFO  (qtp1455695758-49) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:nus+best+teacher+OR+Comment_Body:nus+best+teacher)+AND+(Subreddit:'sgexams'+OR+Subreddit:nus)&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=2300 status=0 QTime=6
+2023-03-29 07:54:49.670 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:stars+OR+Comment_Body:stars)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=2 status=0 QTime=9
+2023-03-29 07:55:26.500 INFO  (qtp1455695758-46) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:stars+OR+Comment_Body:stars)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=2 status=0 QTime=7
+2023-03-29 08:10:04.022 INFO  (qtp1455695758-24) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:best+teacher+OR+Comment_Body:best+teacher)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=28
+2023-03-29 08:11:19.483 INFO  (qtp1455695758-49) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:best+teacher+OR+Comment_Body:best+teacher)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=3
+2023-03-29 08:12:02.636 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:best+teacher+OR+Comment_Body:best+teacher)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=10
+2023-03-29 08:13:04.506 INFO  (qtp1455695758-46) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:best+teacher+OR+Comment_Body:best+teacher)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=1
+2023-03-29 08:14:41.781 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:best+teacherr+OR+Comment_Body:best+teacherr)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=18
+2023-03-29 08:19:41.756 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:bets+course+OR+Comment_Body:bets+course)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=1 status=0 QTime=31
+2023-03-29 08:42:43.132 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:best+course+OR+Comment_Body:best+course)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=15
+2023-03-29 08:42:50.506 INFO  (qtp1455695758-46) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:best+courseq+OR+Comment_Body:best+courseq)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=8
+2023-03-29 08:42:53.035 INFO  (qtp1455695758-22) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:best+is+OR+Comment_Body:best+is)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=5
+2023-03-29 08:42:55.118 INFO  (qtp1455695758-49) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/select params={q=(Post_Title:best+is+OR+Comment_Body:best+is)+AND+(Subreddit:'sgexams')&defType=edismax&fl=*,+score&boost=Total_Score&rows=5} hits=266 status=0 QTime=1
+2023-03-29 09:01:10.077 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@1ae67cad{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2023-03-29 09:01:10.098 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=562345204
+2023-03-29 09:01:10.103 INFO  (coreCloseExecutor-24-thread-1) [ x:new_core] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@154e5b96 new_core
+2023-03-29 09:01:10.104 INFO  (coreCloseExecutor-24-thread-1) [ x:new_core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.new_core tag=SolrCore@154e5b96
+2023-03-29 09:01:10.135 INFO  (coreCloseExecutor-24-thread-1) [ x:new_core] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2023-03-29 09:01:10.197 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2023-03-29 09:01:10.207 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2023-03-29 09:01:10.211 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2023-03-29 09:01:10.230 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1849db1a{/solr,null,STOPPED}{/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp}

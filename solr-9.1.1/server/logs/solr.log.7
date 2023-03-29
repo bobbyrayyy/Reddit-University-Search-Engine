@@ -1,0 +1,84 @@
+2023-03-29 06:11:46.174 INFO  (main) [] o.e.j.u.log Logging initialized @2107ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-03-29 06:11:46.614 INFO  (main) [] o.e.j.s.Server jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 15+36-1562
+2023-03-29 06:11:47.183 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-03-29 06:11:47.200 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.1.1
+2023-03-29 06:11:47.201 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2023-03-29 06:11:47.201 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /Users/bob/Documents/school/CZ4034/solr-9.1.1
+2023-03-29 06:11:47.201 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2023-03-29T06:11:47.201492Z
+2023-03-29 06:11:47.221 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr (source: system property: solr.solr.home)
+2023-03-29 06:11:47.225 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/solr.xml
+2023-03-29 06:11:47.363 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/Users/bob/Documents/school/CZ4034/solr-9.1.1/lib]
+2023-03-29 06:11:49.418 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2023-03-29 06:11:49.421 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2023-03-29 06:11:49.843 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr
+2023-03-29 06:11:49.845 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [new_core]
+2023-03-29 06:11:49.857 INFO  (coreLoadExecutor-10-thread-1) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2023-03-29 06:11:49.962 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.3.0
+2023-03-29 06:11:50.015 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1849db1a{/solr,file:///Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp}
+2023-03-29 06:11:50.039 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/logs/2023_03_29.request.log
+2023-03-29 06:11:50.056 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@1ae67cad{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2023-03-29 06:11:50.057 INFO  (main) [] o.e.j.s.Server Started @5993ms
+2023-03-29 06:11:50.166 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.s.IndexSchema Schema name=default-config
+2023-03-29 06:11:50.675 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-03-29 06:11:50.675 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.c.CoreContainer Creating SolrCore 'new_core' using configuration from instancedir /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core, trusted=true
+2023-03-29 06:11:50.765 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.c.SolrCore Opening new SolrCore at [/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core], dataDir=[/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/data/]
+2023-03-29 06:11:51.842 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-03-29 06:11:51.843 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-03-29 06:11:51.883 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-03-29 06:11:51.884 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-03-29 06:11:52.068 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/conf
+2023-03-29 06:11:52.100 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01}
+2023-03-29 06:11:52.145 INFO  (coreLoadExecutor-10-thread-1) [ x:new_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-03-29 06:11:52.174 INFO  (searcherExecutor-12-thread-1-processing-new_core) [ x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-03-29 06:11:52.175 INFO  (searcherExecutor-12-thread-1-processing-new_core) [ x:new_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-03-29 06:11:52.187 INFO  (searcherExecutor-12-thread-1-processing-new_core) [ x:new_core] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2023-03-29 06:17:07.488 INFO  (qtp1455695758-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680070627408} status=0 QTime=32
+2023-03-29 06:17:07.502 INFO  (qtp1455695758-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680070627408} status=0 QTime=46
+2023-03-29 06:17:09.635 INFO  (qtp1455695758-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680070627408} status=0 QTime=3
+2023-03-29 06:17:09.644 INFO  (qtp1455695758-20) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1680070629624} status=0 QTime=10
+2023-03-29 06:17:09.644 INFO  (qtp1455695758-23) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1680070627408&ts=1680070627408} status=503 QTime=7
+2023-03-29 06:17:09.662 INFO  (qtp1455695758-19) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1680070629624} status=0 QTime=31
+2023-03-29 06:17:09.670 INFO  (qtp1455695758-43) [ x:new_core] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1680070629624} status=0 QTime=35
+2023-03-29 06:17:09.670 INFO  (qtp1455695758-41) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680070627408} status=0 QTime=39
+2023-03-29 06:17:17.815 INFO  (qtp1455695758-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680070627408} status=0 QTime=0
+2023-03-29 06:17:17.835 INFO  (qtp1455695758-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1680070627408} status=0 QTime=19
+2023-03-29 06:17:17.842 INFO  (qtp1455695758-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680070627408} status=0 QTime=26
+2023-03-29 06:17:17.863 INFO  (qtp1455695758-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680070627408} status=0 QTime=0
+2023-03-29 06:17:17.865 INFO  (qtp1455695758-18) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1680070627408} status=0 QTime=3
+2023-03-29 06:17:22.288 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.new_core tag=null
+2023-03-29 06:17:22.372 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@252830e4 new_core
+2023-03-29 06:17:22.373 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.new_core tag=SolrCore@252830e4
+2023-03-29 06:17:22.379 INFO  (qtp1455695758-18) [ x:new_core] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2023-03-29 06:17:22.392 INFO  (qtp1455695758-18) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=new_core&action=UNLOAD&wt=json&_=1680070627408} status=0 QTime=111
+2023-03-29 06:17:22.415 INFO  (qtp1455695758-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1680070627408} status=0 QTime=1
+2023-03-29 06:17:22.416 INFO  (qtp1455695758-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680070627408} status=0 QTime=1
+2023-03-29 06:17:22.421 INFO  (qtp1455695758-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680070627408} status=0 QTime=6
+2023-03-29 06:17:28.881 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1680070627408
+2023-03-29 06:17:28.970 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.3.0
+2023-03-29 06:17:28.992 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.s.IndexSchema Schema name=default-config
+2023-03-29 06:17:29.108 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-03-29 06:17:29.108 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.c.CoreContainer Creating SolrCore 'new_core' using configuration from instancedir /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core, trusted=true
+2023-03-29 06:17:29.112 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.c.SolrCore Opening new SolrCore at [/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core], dataDir=[/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/data/]
+2023-03-29 06:17:29.200 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-03-29 06:17:29.200 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-03-29 06:17:29.208 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-03-29 06:17:29.208 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-03-29 06:17:29.228 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr/new_core/conf
+2023-03-29 06:17:29.230 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01}
+2023-03-29 06:17:29.235 INFO  (qtp1455695758-25) [ x:new_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-03-29 06:17:29.240 INFO  (searcherExecutor-18-thread-1-processing-new_core) [ x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-03-29 06:17:29.240 INFO  (searcherExecutor-18-thread-1-processing-new_core) [ x:new_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-03-29 06:17:29.241 INFO  (qtp1455695758-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1680070627408} status=0 QTime=367
+2023-03-29 06:17:29.249 INFO  (searcherExecutor-18-thread-1-processing-new_core) [ x:new_core] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2023-03-29 06:17:29.266 INFO  (qtp1455695758-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1680070627408} status=0 QTime=0
+2023-03-29 06:17:29.270 INFO  (qtp1455695758-18) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1680070627408} status=0 QTime=5
+2023-03-29 06:17:29.274 INFO  (qtp1455695758-41) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1680070627408} status=0 QTime=9
+2023-03-29 06:17:52.715 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@1ae67cad{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2023-03-29 06:17:52.732 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=562345204
+2023-03-29 06:17:52.738 INFO  (coreCloseExecutor-24-thread-1) [ x:new_core] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@3778757c new_core
+2023-03-29 06:17:52.738 INFO  (coreCloseExecutor-24-thread-1) [ x:new_core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.new_core tag=SolrCore@3778757c
+2023-03-29 06:17:52.772 INFO  (coreCloseExecutor-24-thread-1) [ x:new_core] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2023-03-29 06:17:52.779 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2023-03-29 06:17:52.784 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2023-03-29 06:17:52.788 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2023-03-29 06:17:52.804 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1849db1a{/solr,null,STOPPED}{/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp}

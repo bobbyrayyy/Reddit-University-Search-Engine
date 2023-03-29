@@ -1,0 +1,53 @@
+2023-03-29 09:01:17.605 INFO  (main) [] o.e.j.u.log Logging initialized @1781ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-03-29 09:01:17.961 INFO  (main) [] o.e.j.s.Server jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 15+36-1562
+2023-03-29 09:01:18.055 WARN  (main) [] o.e.j.w.WebInfConfiguration Web application not found /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp
+2023-03-29 09:01:18.056 WARN  (main) [] o.e.j.w.WebAppContext Failed startup of context o.e.j.w.WebAppContext@1849db1a{/solr,null,STOPPED}{/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp} => java.io.FileNotFoundException: /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp
+	at org.eclipse.jetty.webapp.WebInfConfiguration.unpack(WebInfConfiguration.java:670)
+java.io.FileNotFoundException: /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp
+	at org.eclipse.jetty.webapp.WebInfConfiguration.unpack(WebInfConfiguration.java:670) ~[jetty-webapp-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.webapp.WebInfConfiguration.preConfigure(WebInfConfiguration.java:143) ~[jetty-webapp-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.webapp.WebAppContext.preConfigure(WebAppContext.java:488) ~[jetty-webapp-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:523) ~[jetty-webapp-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:426) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.start(Server.java:423) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:387) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.xml.XmlConfiguration.lambda$main$3(XmlConfiguration.java:1907) ~[jetty-xml-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.security.AccessController.doPrivileged(AccessController.java:554) ~[?:?]
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1857) ~[jetty-xml-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:218) ~[start.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.start.Main.start(Main.java:491) ~[start.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.start.Main.main(Main.java:77) ~[start.jar:9.4.48.v20220622]
+2023-03-29 09:01:18.070 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /Users/bob/Documents/school/CZ4034/solr-9.1.1/server/logs/2023_03_29.request.log
+2023-03-29 09:01:18.095 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@1ae67cad{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2023-03-29 09:01:18.096 INFO  (main) [] o.e.j.s.Server Started @2273ms
+2023-03-29 09:03:18.027 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@1ae67cad{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2023-03-29 09:03:18.034 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1849db1a{/solr,null,STOPPED}{/Users/bob/Documents/school/CZ4034/solr-9.1.1/server/solr-webapp/webapp}

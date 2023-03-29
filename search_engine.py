@@ -1,11 +1,32 @@
 import requests
 import pandas as pd
+import contextualSpellCheck
+import spacy
+
+nlp = spacy.load("en_core_web_sm") 
+contextualSpellCheck.add_to_pipe(nlp)
 
 solr_url = "http://localhost:8983/solr/new_core/select"
 
 schools = ['ntu', 'nus', 'smu', 'sit', 'sutd']
 
 def search(query):
+    # Get misspelt words
+    doc = nlp(query)
+    recommendation_spelling = doc._.suggestions_spellCheck
+    # print(doc._.suggestions_spellCheck)
+    
+    original_sentence = query.split(' ')
+    
+    for key in recommendation_spelling:
+        if str(key) not in schools:   
+            for index, word in enumerate(original_sentence):
+                if word == str(key):
+                    original_sentence[index] = recommendation_spelling[key]
+    
+    print(' '.join(original_sentence))
+    recommendation = ' '.join(original_sentence)
+
     # Search in both post title and comments
     formatted_query = "(Post_Title:" + str(query) + " OR Comment_Body:" + str(query) +")"  # to search in both posts and comments
 
@@ -21,12 +42,13 @@ def search(query):
             formatted_query += " OR Subreddit:" + subs_to_include[i]
     formatted_query += ")"
 
-    # Define the Solr API URL and query parameters
+    # Define the query parameters
     params = {
+        "defType": "edismax",
         'q': formatted_query,
         'rows': 5,  # Top k=5 results
-        'boost': 'product(Total_Score, score)' # Boost query by multiplying score with Post Score field
-
+        'fl': '*, score',
+        "boost": "Total_Score"
     }
 
     try:
@@ -50,4 +72,4 @@ def search(query):
         results = ['Failed']
         
     print(pd.DataFrame(results))
-    return results
+    return results, recommendation
